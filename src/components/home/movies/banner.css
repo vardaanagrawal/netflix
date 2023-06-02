@@ -1,0 +1,97 @@
+.banner {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(20, 20, 20);
+  color: white;
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.banner-mobile-img {
+  display: none;
+}
+.banner-shadow-ttb {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(20, 20, 20));
+  z-index: 2;
+}
+.banner-content {
+  width: calc(100% - 10vw);
+  max-width: 700px;
+  position: absolute;
+  z-index: 3;
+  top: 25vh;
+  left: 5vw;
+}
+.banner-movie-title {
+  font-size: 54px;
+  font-weight: 800;
+}
+.banner-movie-desc {
+  font-size: 20px;
+  max-height: 100px;
+  overflow: hidden;
+  line-height: 25px;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.banner-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.banner-play-btn {
+  background-color: white;
+  color: black;
+  padding: 7px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.banner-info-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 7px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner-desktop-img {
+    display: none;
+  }
+  .banner-mobile-img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner-movie-title {
+    font-size: 38px;
+  }
+  .banner-movie-desc {
+    font-size: 16px;
+    line-height: 20px;
+    height: 80px;
+  }
+  .banner-btns {
+    font-size: 15px;
+    /* font-weight: 600; */
+  }
+  .banner-play-btn,
+  .banner-info-btn {
+    padding: 7px 25px;
+  }
+}

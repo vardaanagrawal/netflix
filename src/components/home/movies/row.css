@@ -1,0 +1,13 @@
+.row {
+  margin: 0px 0px;
+  padding: 0px 5vw;
+}
+.row-head {
+  font-size: 32px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 500px){
+  .row-head{
+    font-size: 22px;
+  }
+}

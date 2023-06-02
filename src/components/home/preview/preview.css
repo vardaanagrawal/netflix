@@ -1,0 +1,114 @@
+.preview {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prev-box {
+  background-color: #141414;
+  height: 90vh;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.prev-box-img {
+  position: relative;
+  width: 100%;
+  height: 73%;
+  overflow: hidden;
+}
+.prev-box-img img {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.prev-box-img-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, #141414, transparent);
+  z-index: 2;
+}
+.prev-box-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.prev-back-btn {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.461);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.prev-back-btn img {
+  height: 20px;
+}
+.prev-box-title {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.prev-movie-info {
+  padding: 20px;
+  min-height: 200px;
+}
+.prev-movie-desc{
+    max-height: 80px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.prev-box-date {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+.prev-hd {
+  border: solid white 1px;
+  padding: 0px 5px;
+  font-size: smaller;
+}
+.movie-card-rating {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 2px;
+}
+.movie-card-rating img {
+  height: 20px;
+}
+.prev-movie-genres {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  .prev-box {
+    height: 100vh;
+    border-radius: 0px;
+  }
+}
