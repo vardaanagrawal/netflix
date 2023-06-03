@@ -7,6 +7,7 @@ import {
   getOriginalMovies,
   getTrendingMovies,
 } from "../../api";
+import Loader from "../../loader/Loader";
 
 export default function Movies({ setPreviewMovie, setTrailerMovie }) {
   const [loading, setLoading] = useState(true);
@@ -42,7 +43,7 @@ export default function Movies({ setPreviewMovie, setTrailerMovie }) {
   }
 
   return loading ? (
-    <div>Loading</div>
+    <Loader />
   ) : (
     <div className="movies-page">
       <Banner

@@ -11,7 +11,10 @@ export default function Navbar() {
     });
   }, []);
   return (
-    <div className="navbar" style={{backgroundColor: show ? "#141414" : "transparent"}}>
+    <div
+      className="navbar"
+      style={{ backgroundColor: show ? "#141414" : "transparent" }}
+    >
       <div className="navbar-logo">
         <svg
           viewBox="0 0 111 30"
@@ -28,7 +31,7 @@ export default function Navbar() {
         </svg>
       </div>
       <div className="navbar-profiles">
-        <img src="http://localhost:3002/static/media/profile1.c93150720beffa468916.png"></img>
+        <img src="https://res.cloudinary.com/dg1awjvew/image/upload/v1685763469/netflix/profile1_nrh9c2.png"></img>
       </div>
     </div>
   );

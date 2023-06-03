@@ -10,7 +10,7 @@ export default function Home() {
   const [trailerMovie, setTrailerMovie] = useState(false);
 
   return (
-    <div>
+    <div className="home">
       <Navbar />
       <Movies
         setPreviewMovie={setPreviewMovie}

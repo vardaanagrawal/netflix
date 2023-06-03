@@ -11,7 +11,7 @@ export default function Row({ data, title, setPreviewMovie }) {
         style={{
           display: "flex",
           overflow: "scroll",
-          padding: "15px 10px 40px",
+          padding: "15px 0px 40px",
         }}
       >
         <div
